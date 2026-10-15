@@ -2,7 +2,7 @@
 
 MATLAB/GNU Octave code for reproducing the figures and tables in Section VI of:
 
-> T. Routtenberg, "Graph Signal Estimation With Unknown Topology," submitted to *IEEE Transactions on Signal Processing*, 2026.
+> T. Routtenberg, "Graph Signal Estimation With Unknown Topology," submitted, Oct. 2026.
 
 The code implements graph-signal estimators under topology uncertainty, including multi-basis, shared-response, low-rank, and topology-adaptive estimators, as well as shared spectral-function designs for transfer across networks of different sizes.
 
