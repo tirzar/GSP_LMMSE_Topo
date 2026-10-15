@@ -1,0 +1,13 @@
+function fig = fg_new(cfg, widthIn, heightIn)
+%FG_NEW  New figure sized for IEEE two-column layout.
+%
+%   fig = FG_NEW(cfg, widthIn, heightIn): widthIn = 3.5 (one column) or
+%   7.16 (two columns) inches. Default fonts and sizes follow cfg.fig.
+
+fig = figure('Color', 'w', 'Units', 'inches', 'Position', [1 1 widthIn heightIn], ...
+             'PaperUnits', 'inches', 'PaperSize', [widthIn heightIn], ...
+             'PaperPosition', [0 0 widthIn heightIn], 'Visible', cfg.fig.visible);
+set(fig, 'DefaultAxesFontSize', cfg.fig.fontSize, 'DefaultTextFontSize', cfg.fig.fontSize, ...
+    'DefaultAxesFontName', cfg.fig.font, 'DefaultTextFontName', cfg.fig.font, ...
+    'DefaultLineLineWidth', cfg.fig.lineWidth, 'DefaultLineMarkerSize', cfg.fig.markerSize);
+end
